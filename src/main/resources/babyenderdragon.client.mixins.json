@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.babyenderdragon.mixin.client",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"AvatarRenderStateMixin",
+		"AvatarRendererMixin",
+		"PlayerModelMixin",
+		"PlayerRotationMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.babyenderdragon.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"PlayerRidingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

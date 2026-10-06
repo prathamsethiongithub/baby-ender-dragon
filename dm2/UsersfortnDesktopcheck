@@ -1,0 +1,1540 @@
+{
+  "sha": "8b47df7625d118909d57da9aec176201317a0aa7",
+  "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/8b47df7625d118909d57da9aec176201317a0aa7",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56d6909771290af0b3fadd192e6a46e9f3ecb82b",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/56d6909771290af0b3fadd192e6a46e9f3ecb82b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82e94e99f03ffe9e004046263ee43e615a866a98",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/82e94e99f03ffe9e004046263ee43e615a866a98"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/issue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e272858c94a84982828b541064362e24790e9a04",
+      "size": 642,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/e272858c94a84982828b541064362e24790e9a04"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6915ea3922d7066b22921210fe9f7cc107f3a573",
+      "size": 199,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/6915ea3922d7066b22921210fe9f7cc107f3a573"
+    },
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd010e0e7fd1fac170c2b58652a9dc86eba32da9",
+      "size": 7382,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cd010e0e7fd1fac170c2b58652a9dc86eba32da9"
+    },
+    {
+      "path": "build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "403f787cca15ca17a0d700671603b97dcfe3aad7",
+      "size": 3542,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/403f787cca15ca17a0d700671603b97dcfe3aad7"
+    },
+    {
+      "path": "gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d45e34c53db6d3576966fb224cb4b0a311e1944",
+      "size": 409,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/5d45e34c53db6d3576966fb224cb4b0a311e1944"
+    },
+    {
+      "path": "gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5bb13f50b6f470a42defa8cd9a41261c634756ff",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/5bb13f50b6f470a42defa8cd9a41261c634756ff"
+    },
+    {
+      "path": "gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "779e9d0f1818947f10f051e7d97307267cc93a82",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/779e9d0f1818947f10f051e7d97307267cc93a82"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a3265ee94c0ab25cf079ac8ccdf87f41d455d42",
+      "size": 54708,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/7a3265ee94c0ab25cf079ac8ccdf87f41d455d42"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c47d316a20327cfa46a2fe2f0c7ee25b5675174",
+      "size": 230,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/0c47d316a20327cfa46a2fe2f0c7ee25b5675174"
+    },
+    {
+      "path": "gradlew",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cccdd3d517fc5249beaefa600691cf150f2fa3e6",
+      "size": 5296,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cccdd3d517fc5249beaefa600691cf150f2fa3e6"
+    },
+    {
+      "path": "gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9553162f122c71b34635112e717c3e733b5b212",
+      "size": 2176,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f9553162f122c71b34635112e717c3e733b5b212"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f72a3661b28bd16452d0d52843e3b759d025a03d",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/f72a3661b28bd16452d0d52843e3b759d025a03d"
+    },
+    {
+      "path": "src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90633fb2af1fa0d404725a538165af117197334c",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/90633fb2af1fa0d404725a538165af117197334c"
+    },
+    {
+      "path": "src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b27d37a52d5511d4091267effe301c70b306726",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/5b27d37a52d5511d4091267effe301c70b306726"
+    },
+    {
+      "path": "src/main/java/wolfshotz",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fede8bbf7e697b3a8e33fc8e7b80353e3f5a066",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/9fede8bbf7e697b3a8e33fc8e7b80353e3f5a066"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3700754e0fd281b53985cc3192bf2ccf343866d9",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/3700754e0fd281b53985cc3192bf2ccf343866d9"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/DMLRegistry.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f75d9dcf6612c244d9c5fa25a5c6aa82db02b4e0",
+      "size": 8133,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f75d9dcf6612c244d9c5fa25a5c6aa82db02b4e0"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/DragonMountsLegacy.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e23c88f7215ed3de2b3e485029672335ffb6a234",
+      "size": 4488,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/e23c88f7215ed3de2b3e485029672335ffb6a234"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04884a896519a5ec4631214f857642ad1dfe0d16",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/04884a896519a5ec4631214f857642ad1dfe0d16"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/BreathKeybind.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee8e05ddf99aa9b1f4c288e2fb61847d8b51f3c9",
+      "size": 1758,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ee8e05ddf99aa9b1f4c288e2fb61847d8b51f3c9"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/ClientEvents.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bfca13669a88319555f95c0eadbc04582d30473",
+      "size": 2822,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/4bfca13669a88319555f95c0eadbc04582d30473"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/anim",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a3b06b6d980af41abdb6d929085b89de2794e7e",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/4a3b06b6d980af41abdb6d929085b89de2794e7e"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/anim/CircularBuffer.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfbd5d27c859e843749dea398d92b6cefe05f782",
+      "size": 995,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cfbd5d27c859e843749dea398d92b6cefe05f782"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/anim/DragonAnimator.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2459967f264eb090daa0119f9ddb9b3a740e2813",
+      "size": 24205,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2459967f264eb090daa0119f9ddb9b3a740e2813"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/anim/TickFloat.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74b6ff11f6838269fb0d4a65428f0651cd36ebe5",
+      "size": 1595,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/74b6ff11f6838269fb0d4a65428f0651cd36ebe5"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47b8600ca6f21d43ce29ba016200ff139765f645",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/47b8600ca6f21d43ce29ba016200ff139765f645"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/model/DragonModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27fd9a927e60e1256c36353aa413d98b627e3b08",
+      "size": 14408,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/27fd9a927e60e1256c36353aa413d98b627e3b08"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/model/ModelPart.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93233f2ee6162dc69fb5b3f67986f133c0d2545d",
+      "size": 3012,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/93233f2ee6162dc69fb5b3f67986f133c0d2545d"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/model/ModelPartProxy.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff16d6ccd7667a0259ad5a353c657fd8f239482b",
+      "size": 3504,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ff16d6ccd7667a0259ad5a353c657fd8f239482b"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/render",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36b4a1ef6ab13776745087116b53a9ebb2f458ae",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/36b4a1ef6ab13776745087116b53a9ebb2f458ae"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/render/DragonRenderer.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30124eb37dfd63069126e64d7c2aebaa7c28e79e",
+      "size": 10592,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/30124eb37dfd63069126e64d7c2aebaa7c28e79e"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/render/EggRenderer.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61665f6e487a3199a27b04c6b7ece1323e353992",
+      "size": 2597,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/61665f6e487a3199a27b04c6b7ece1323e353992"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/client/render/RenderTypes.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db01cf8efdb5f7825f80f0583d45dbcf3212a63a",
+      "size": 1402,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/db01cf8efdb5f7825f80f0583d45dbcf3212a63a"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/cmd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6d76ff8238abe6857cded326102941e923988a3",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/a6d76ff8238abe6857cded326102941e923988a3"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/cmd/DragonSetAgeCommand.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59a937eecd991ebebf0fefe88e6de7b3feb3454b",
+      "size": 2311,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/59a937eecd991ebebf0fefe88e6de7b3feb3454b"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5204f86977898ee3e475f227e22b521c0bde079",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/f5204f86977898ee3e475f227e22b521c0bde079"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/data/DataHandler.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d12cd1bd1a0350e94d1c21c46fa890a75c1fb149",
+      "size": 684,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d12cd1bd1a0350e94d1c21c46fa890a75c1fb149"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/data/Loot.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c30548fb8374f0ea66b9476bbf52221278086e2",
+      "size": 5415,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/5c30548fb8374f0ea66b9476bbf52221278086e2"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/data/Models.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1668f1aa3c808b52dcfc8492df3fbcc118d1f4a",
+      "size": 2113,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f1668f1aa3c808b52dcfc8492df3fbcc118d1f4a"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f1d1ca69788bd967b34990681fb3a1795d2b6c2",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/0f1d1ca69788bd967b34990681fb3a1795d2b6c2"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/AetherDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93dc9ce10042fbb36277379a1827d666de07535",
+      "size": 880,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b93dc9ce10042fbb36277379a1827d666de07535"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/DragonEggEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17915e6f605180ff506479b509775a9e7bf25bf7",
+      "size": 7580,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/17915e6f605180ff506479b509775a9e7bf25bf7"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/EndDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2460a689ea425bb5334f74fac1a2d19edad6d44f",
+      "size": 1395,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2460a689ea425bb5334f74fac1a2d19edad6d44f"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/FireDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c25a22e8831c3833de3431d37bda1cb08e4bb22",
+      "size": 1273,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/7c25a22e8831c3833de3431d37bda1cb08e4bb22"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ForestDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3948416131da8a9bb45af42cc47b868e57202313",
+      "size": 1021,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3948416131da8a9bb45af42cc47b868e57202313"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/GhostDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "455dd2eaae96879abe4df7dae32477908dcb8805",
+      "size": 1156,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/455dd2eaae96879abe4df7dae32477908dcb8805"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/IceDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c3fbfc3ff0a11ead01cfd9051e0accaceb4b9e9",
+      "size": 2542,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/8c3fbfc3ff0a11ead01cfd9051e0accaceb4b9e9"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/NetherDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e414c6858686db172200025b4bcd0ea4857d889",
+      "size": 1542,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2e414c6858686db172200025b4bcd0ea4857d889"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/TameableDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "accb5e9f30a82c0982f69a830dded9ad3281abba",
+      "size": 30120,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/accb5e9f30a82c0982f69a830dded9ad3281abba"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/WaterDragonEntity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75598c0e0ca3a0384410745dd1b5404f039623f4",
+      "size": 2038,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/75598c0e0ca3a0384410745dd1b5404f039623f4"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c718e82348fff499c0e3cd5fa0e61f456045f4fc",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/c718e82348fff499c0e3cd5fa0e61f456045f4fc"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/DragonBodyController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8419c9c839b875ad15013c000c408113caa32a6",
+      "size": 1790,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b8419c9c839b875ad15013c000c408113caa32a6"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/DragonMoveController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06c7ed2aa934f13ebda97c10c03816438c82fe13",
+      "size": 2266,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/06c7ed2aa934f13ebda97c10c03816438c82fe13"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/LifeStageController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "957c1ced9abe00583b398b5008c695e00b6fe304",
+      "size": 4797,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/957c1ced9abe00583b398b5008c695e00b6fe304"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/goals",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51bcef1e99c8f892ced7d18db6accf1036785869",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/51bcef1e99c8f892ced7d18db6accf1036785869"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/goals/DragonBabuFollowParent.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b6677a62bd4ed6bd6c0cb299c3168ec11d4ed30",
+      "size": 1737,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/9b6677a62bd4ed6bd6c0cb299c3168ec11d4ed30"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/goals/DragonBreedGoal.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aadf1b6b23f27c51140a253a4111fdba8df42b44",
+      "size": 2567,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/aadf1b6b23f27c51140a253a4111fdba8df42b44"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/goals/DragonFollowOwnerGoal.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee62478e9261df2fbdbc63add15915f51fd8d70",
+      "size": 3132,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/dee62478e9261df2fbdbc63add15915f51fd8d70"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/entities/ai/goals/DragonLandGoal.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85395e0da8260d1d40420471dd014299fe3ddea2",
+      "size": 2165,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/85395e0da8260d1d40420471dd014299fe3ddea2"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/misc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ff82fc1e48b5dd0dc9c0a1c30fcb2d4b92198e2",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/7ff82fc1e48b5dd0dc9c0a1c30fcb2d4b92198e2"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/misc/DragonEggBlock.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10d1972781e61b53940efc4bc0f50cd5c49e20b7",
+      "size": 4870,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/10d1972781e61b53940efc4bc0f50cd5c49e20b7"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/misc/LazySpawnEggItem.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb79e070bcfbba9b852e97ad7a0cbaa2afd54b7a",
+      "size": 5307,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cb79e070bcfbba9b852e97ad7a0cbaa2afd54b7a"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "070bf9d03b481ce8b6776cb49535769d56560d30",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/070bf9d03b481ce8b6776cb49535769d56560d30"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/util/BetterBlockMatcher.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0fc4e1cb0ab8723776fc822c4c4bf2929ecb538",
+      "size": 918,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/c0fc4e1cb0ab8723776fc822c4c4bf2929ecb538"
+    },
+    {
+      "path": "src/main/java/wolfshotz/dml/util/MathX.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228570ce03f04320ebb9ff2c629970cf04f5e30c",
+      "size": 5031,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/228570ce03f04320ebb9ff2c629970cf04f5e30c"
+    },
+    {
+      "path": "src/main/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d75668d0d7750fa1cb54c9e2679479dfa226ee3",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/3d75668d0d7750fa1cb54c9e2679479dfa226ee3"
+    },
+    {
+      "path": "src/main/resources/META-INF",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "783d320390156fb02edd14bdce9ea322f1d8540e",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/783d320390156fb02edd14bdce9ea322f1d8540e"
+    },
+    {
+      "path": "src/main/resources/META-INF/accesstransformer.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78cc33ebcb32624008ee557d424555504c873c71",
+      "size": 236,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/78cc33ebcb32624008ee557d424555504c873c71"
+    },
+    {
+      "path": "src/main/resources/META-INF/mods.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6a34a742652a5df42df4814d10e9272c1397d35",
+      "size": 928,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b6a34a742652a5df42df4814d10e9272c1397d35"
+    },
+    {
+      "path": "src/main/resources/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cdd900d82675c9a4e4b9233a47410929ee24f225",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/cdd900d82675c9a4e4b9233a47410929ee24f225"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39fbfca85b4b364cf3219c9b504ad1ef67af8b4c",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/39fbfca85b4b364cf3219c9b504ad1ef67af8b4c"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f5e84c6046839ba858f54ee3e5545de5638a4aa",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/1f5e84c6046839ba858f54ee3e5545de5638a4aa"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/aether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75e8976c9c4b0c0ebfbb4e986da7fded578625ae",
+      "size": 93,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/75e8976c9c4b0c0ebfbb4e986da7fded578625ae"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/ender_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe8e25f5d8df1ab7f4e266fcd75b9a1ff8e726c0",
+      "size": 92,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/fe8e25f5d8df1ab7f4e266fcd75b9a1ff8e726c0"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/fire_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfd6c2680e0bb00a521e38d9e1209ad49d0f39ff",
+      "size": 91,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/bfd6c2680e0bb00a521e38d9e1209ad49d0f39ff"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/forest_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd4049f184192bc41ef1cbd6366f4f4a6d385b6",
+      "size": 93,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ddd4049f184192bc41ef1cbd6366f4f4a6d385b6"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/ghost_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26ccdfa152b8e1115df6b339da0fbd137a797e2b",
+      "size": 92,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/26ccdfa152b8e1115df6b339da0fbd137a797e2b"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/ice_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f4a63e27d429a68b0772d6d5b7738193269cb99",
+      "size": 90,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/6f4a63e27d429a68b0772d6d5b7738193269cb99"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/nether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b71f79d1c5f9d9ab3bd5f3c0d7da1fd3dcd2053",
+      "size": 93,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/9b71f79d1c5f9d9ab3bd5f3c0d7da1fd3dcd2053"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/blockstates/water_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59d6423f7364fe7cb09caeb57e4c86db8e6d9ff9",
+      "size": 92,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/59d6423f7364fe7cb09caeb57e4c86db8e6d9ff9"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/lang",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fb2e7af6269a772996b0beec352933dd25e3c95",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/0fb2e7af6269a772996b0beec352933dd25e3c95"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/lang/en_us.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac661ffed7386e52392f4c64f4b0003f73515229",
+      "size": 1666,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ac661ffed7386e52392f4c64f4b0003f73515229"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/lang/ru_ru.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdf15133fd742b4580461ce98b4e223c55154c5d",
+      "size": 2285,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cdf15133fd742b4580461ce98b4e223c55154c5d"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/lang/zh_cn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31e016e44cc9d038b89d5b610567867205399efd",
+      "size": 1512,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/31e016e44cc9d038b89d5b610567867205399efd"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2716411ba736184cc0b51bceffb995feb11d5464",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/2716411ba736184cc0b51bceffb995feb11d5464"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9e4814a95d5b1b65b6da56b958d28c7dbb85c97",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/c9e4814a95d5b1b65b6da56b958d28c7dbb85c97"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/aether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a9f09e5f0b834c231808cb078937feb6ce8ae60",
+      "size": 171,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3a9f09e5f0b834c231808cb078937feb6ce8ae60"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/ender_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1570a78ad62b7a98ae6140e155df21fb85c72e1c",
+      "size": 44,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/1570a78ad62b7a98ae6140e155df21fb85c72e1c"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/fire_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f36a194f1156899632be7bdfa4644acff25c15d",
+      "size": 167,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/8f36a194f1156899632be7bdfa4644acff25c15d"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/forest_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0af3965bd0a852bf9c380a5395eff128c0d8a12",
+      "size": 171,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b0af3965bd0a852bf9c380a5395eff128c0d8a12"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/ghost_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b12b6161786e4cb8a87bb7447b4586058f8bae26",
+      "size": 169,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b12b6161786e4cb8a87bb7447b4586058f8bae26"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/ice_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c62cf4d6d69e09cb96b88306f261f80d77f402bc",
+      "size": 165,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/c62cf4d6d69e09cb96b88306f261f80d77f402bc"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/nether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "751040e705d1b019d950bc7ffcfa21da3f199dde",
+      "size": 171,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/751040e705d1b019d950bc7ffcfa21da3f199dde"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/block/water_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d3772babc76e2f57d92e5cd3e7e95eced305c3a",
+      "size": 169,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/4d3772babc76e2f57d92e5cd3e7e95eced305c3a"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "810e843cb7e8d468d62cbdf6482ebf04245a3056",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/810e843cb7e8d468d62cbdf6482ebf04245a3056"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/aether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "676c2d86e0bf0ea80b664a46b833df512fe2a226",
+      "size": 54,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/676c2d86e0bf0ea80b664a46b833df512fe2a226"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/aether_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ender_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed27f080273df2e551d0c09d3256a44c464850a0",
+      "size": 53,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ed27f080273df2e551d0c09d3256a44c464850a0"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ender_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/fire_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f872ea7f97185e0aeedc321ffdb11d019ba5bd17",
+      "size": 52,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f872ea7f97185e0aeedc321ffdb11d019ba5bd17"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/fire_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/forest_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "893091377a757bb90a026b74e3ca8c646a81e621",
+      "size": 54,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/893091377a757bb90a026b74e3ca8c646a81e621"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/forest_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ghost_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "661ab7e958d532f87407752a6607331e0de446f5",
+      "size": 53,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/661ab7e958d532f87407752a6607331e0de446f5"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ghost_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ice_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b4adb0f9bdcbb9e9d232d6225900d08cf89ff18",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/8b4adb0f9bdcbb9e9d232d6225900d08cf89ff18"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/ice_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/nether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8a30f74c16c13c0d7f2435036285e0d571272b6",
+      "size": 54,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d8a30f74c16c13c0d7f2435036285e0d571272b6"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/nether_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/water_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4faf9e51426f27ee462507b656840dfb408a8da",
+      "size": 53,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d4faf9e51426f27ee462507b656840dfb408a8da"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/models/item/water_dragon_spawn_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1aaa9d6efdd855226de4eaa4f770bde2465d5fb",
+      "size": 51,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d1aaa9d6efdd855226de4eaa4f770bde2465d5fb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "635d7ebc59878113fa4d5967931fe904c6baf19b",
+      "size": 708,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/635d7ebc59878113fa4d5967931fe904c6baf19b"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c99347c828ce58522b7352d921d183cb72fe5f30",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/c99347c828ce58522b7352d921d183cb72fe5f30"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee91c2c837d329700058bb3ae916e22b105c4667",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/ee91c2c837d329700058bb3ae916e22b105c4667"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ec972d8fad7f80f20c6ced707bbdb53166864ab",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/2ec972d8fad7f80f20c6ced707bbdb53166864ab"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon/death.ogg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f631f7dcddfd4a3eb2fd94d3f802186eec3d4a4",
+      "size": 28884,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3f631f7dcddfd4a3eb2fd94d3f802186eec3d4a4"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon/step1.ogg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1425b7e4f9fc566d448814a9068b241dd40d5df",
+      "size": 5364,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f1425b7e4f9fc566d448814a9068b241dd40d5df"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon/step2.ogg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68549eed4f6e72097c52ed75aac577185e8e21d0",
+      "size": 5422,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/68549eed4f6e72097c52ed75aac577185e8e21d0"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon/step3.ogg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a75842754f6d20cf81d5c291738afd525d5f7589",
+      "size": 5182,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/a75842754f6d20cf81d5c291738afd525d5f7589"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/sounds/entity/dragon/step4.ogg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c8e382551e3cccdcb8c2efe8c6959fcb9564efc",
+      "size": 5313,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/6c8e382551e3cccdcb8c2efe8c6959fcb9564efc"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10b8319ecd0ec6463ccc494546c2c15b65f3f1ab",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/10b8319ecd0ec6463ccc494546c2c15b65f3f1ab"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03f8743a1fbf413a456b4b37636269262125c831",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/03f8743a1fbf413a456b4b37636269262125c831"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/aether_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0bcdd8e329952f4f068b4c264e78dfb453f150",
+      "size": 559,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2a0bcdd8e329952f4f068b4c264e78dfb453f150"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/aether_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c52de45692c862748efac320bbc0d3f89e89c5",
+      "size": 128,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/a7c52de45692c862748efac320bbc0d3f89e89c5"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/fire_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3db26200c51d43504ee81a42ed4d0fd33f280a3b",
+      "size": 897,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3db26200c51d43504ee81a42ed4d0fd33f280a3b"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/fire_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc3e52835ab4b700099ad1b838052a868b9a0e9",
+      "size": 118,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ffc3e52835ab4b700099ad1b838052a868b9a0e9"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/forest_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9813aa0eb1fb71411f9e7ada132de88db243bce7",
+      "size": 562,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/9813aa0eb1fb71411f9e7ada132de88db243bce7"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/forest_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a4c394e5be9eedd0a3eb1d03e8fa2da92ae022",
+      "size": 119,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/64a4c394e5be9eedd0a3eb1d03e8fa2da92ae022"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/ghost_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d4150d4aa24ecc2de243732a61931d09934ce59",
+      "size": 1170,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/8d4150d4aa24ecc2de243732a61931d09934ce59"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/ghost_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7db36aaf7e41fc9e449f676fff3ac46254de5470",
+      "size": 119,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/7db36aaf7e41fc9e449f676fff3ac46254de5470"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/ice_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2f2f072e9d916031c80ee6ddb7d9624b56f4ef9",
+      "size": 1370,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/d2f2f072e9d916031c80ee6ddb7d9624b56f4ef9"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/ice_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2407a390aee39b87ec0bf6081ffc692c9426e5e4",
+      "size": 124,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2407a390aee39b87ec0bf6081ffc692c9426e5e4"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/nether_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b48e59855fddfab229ebf8a6ec5b5023ff4ead47",
+      "size": 776,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b48e59855fddfab229ebf8a6ec5b5023ff4ead47"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/nether_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc3e52835ab4b700099ad1b838052a868b9a0e9",
+      "size": 118,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ffc3e52835ab4b700099ad1b838052a868b9a0e9"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/water_dragon_egg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54a9b734519b5866e2547756b6094ef55d715b0b",
+      "size": 612,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/54a9b734519b5866e2547756b6094ef55d715b0b"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/block/water_dragon_egg.png.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc3e52835ab4b700099ad1b838052a868b9a0e9",
+      "size": 118,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/ffc3e52835ab4b700099ad1b838052a868b9a0e9"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7cad8c9961a5bbbe390675a1b377d9147e8b0e7",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/e7cad8c9961a5bbbe390675a1b377d9147e8b0e7"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "862f41ee99f0f5ccb54abf3d254be2b026b34403",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/862f41ee99f0f5ccb54abf3d254be2b026b34403"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/aether_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb1455cffed133b6e114d6b99488bfe72311ed9e",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/eb1455cffed133b6e114d6b99488bfe72311ed9e"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/aether_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24c163b25ef684114cf343c9dc32b16fb6f0afb6",
+      "size": 23245,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/24c163b25ef684114cf343c9dc32b16fb6f0afb6"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/aether_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64cc853b34e389ecd02dcd11dc2dd6c058b61bc5",
+      "size": 1379,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/64cc853b34e389ecd02dcd11dc2dd6c058b61bc5"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/aether_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5176a55fba2f8bd442b60c79b0503a274e0d106d",
+      "size": 3594,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/5176a55fba2f8bd442b60c79b0503a274e0d106d"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/dissolve.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748d075267fa4b203a8474fd87e461a16720e267",
+      "size": 39437,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/748d075267fa4b203a8474fd87e461a16720e267"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ender_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "393fdcb2c70bf775211fba13d6571744be62afc7",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/393fdcb2c70bf775211fba13d6571744be62afc7"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ender_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfd8b16ff25d08ab946d7a4c5e61637debfacf4c",
+      "size": 7749,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/cfd8b16ff25d08ab946d7a4c5e61637debfacf4c"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ender_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5278fd9875b8c879cf6929bd2c2e889b0eeb1737",
+      "size": 1408,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/5278fd9875b8c879cf6929bd2c2e889b0eeb1737"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ender_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e6d1e8684f611f70772330375865aec822076d2",
+      "size": 1950,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/2e6d1e8684f611f70772330375865aec822076d2"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/fire_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f890cd534b7935fdcc303ccb3efbcd96c7a84ebc",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/f890cd534b7935fdcc303ccb3efbcd96c7a84ebc"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/fire_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87e098d8d6a8062d2dcb531ffac6622f28c19535",
+      "size": 25859,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/87e098d8d6a8062d2dcb531ffac6622f28c19535"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/fire_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f3d3ff7a7c4bbfa4cffe0e5f689d705112374f3",
+      "size": 1652,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3f3d3ff7a7c4bbfa4cffe0e5f689d705112374f3"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/fire_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bd1de136735205baf9fbfd367f6350013461650",
+      "size": 3438,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/9bd1de136735205baf9fbfd367f6350013461650"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/forest_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83704b08f4251f102af7a43e7cd5e14c9eae250e",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/83704b08f4251f102af7a43e7cd5e14c9eae250e"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/forest_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62bc4202c6a2866f12de3dea13d5bc2f8731a84f",
+      "size": 35087,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/62bc4202c6a2866f12de3dea13d5bc2f8731a84f"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/forest_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23c7a03445718f40c35fe4eeb85cce7510543bef",
+      "size": 1414,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/23c7a03445718f40c35fe4eeb85cce7510543bef"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/forest_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c60951892230b7f8dd96b6fe45082e14a3027a7f",
+      "size": 2982,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/c60951892230b7f8dd96b6fe45082e14a3027a7f"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ghost_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff6b2c7b9962a225446561034d9650175e567f57",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/ff6b2c7b9962a225446561034d9650175e567f57"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ghost_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "786b66507384a483242bfbb836182e1eb5def7a5",
+      "size": 20994,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/786b66507384a483242bfbb836182e1eb5def7a5"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ghost_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f83c1f214e5f5c7b45bafadfabec644c00198cf",
+      "size": 10402,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/4f83c1f214e5f5c7b45bafadfabec644c00198cf"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ghost_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baa442c5199f0cb22eac165f7811ce434380303e",
+      "size": 3451,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/baa442c5199f0cb22eac165f7811ce434380303e"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ice_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a3e8b7239b6fd7d6e1784430385a71586a2ee31",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/8a3e8b7239b6fd7d6e1784430385a71586a2ee31"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ice_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db35c222ea3aa4f23f376450f3deccb4406bf7d4",
+      "size": 13037,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/db35c222ea3aa4f23f376450f3deccb4406bf7d4"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ice_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6370c5cccd7e39a48843f1d29db51de3f4b1bdb",
+      "size": 4397,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/f6370c5cccd7e39a48843f1d29db51de3f4b1bdb"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/ice_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1983504ad1ff0984a15bb430b963b911c3d95b44",
+      "size": 2984,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/1983504ad1ff0984a15bb430b963b911c3d95b44"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/nether_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f46f47aad03f1652b7819508d1087fd1eb9f9e6",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/2f46f47aad03f1652b7819508d1087fd1eb9f9e6"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/nether_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66d40d096eae9e2f9f889acab6b05cf2141d7352",
+      "size": 27537,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/66d40d096eae9e2f9f889acab6b05cf2141d7352"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/nether_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ac4210fdf9ecc93ca8a144ebc9829eb73fe061",
+      "size": 6003,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/40ac4210fdf9ecc93ca8a144ebc9829eb73fe061"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/nether_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9aea67dbe117f6733b15b9ba2f871cfecb05a8e1",
+      "size": 3532,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/9aea67dbe117f6733b15b9ba2f871cfecb05a8e1"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/water_dragon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b29af34d5e978f012a7abdc495b393d663813362",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/b29af34d5e978f012a7abdc495b393d663813362"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/water_dragon/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56cbbcdedf2ba69271b69c75d2cbd5f7a911b146",
+      "size": 22497,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/56cbbcdedf2ba69271b69c75d2cbd5f7a911b146"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/water_dragon/glow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcc27ff7ec314d6a631c7d90f3d145a56697127a",
+      "size": 1641,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/bcc27ff7ec314d6a631c7d90f3d145a56697127a"
+    },
+    {
+      "path": "src/main/resources/assets/dragonmounts/textures/entity/dragon/water_dragon/saddle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8616d5a919fb7c22ab86748353a080f13d1fb14",
+      "size": 3010,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/b8616d5a919fb7c22ab86748353a080f13d1fb14"
+    },
+    {
+      "path": "src/main/resources/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fc5ac87072b2f92c6f5690587c2435b75800371",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/0fc5ac87072b2f92c6f5690587c2435b75800371"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8309c4d1dc3739a5cbdc59943c4274ffabef1781",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/8309c4d1dc3739a5cbdc59943c4274ffabef1781"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88d2803793661a0122db7f32f74cd9e60e7c609c",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/88d2803793661a0122db7f32f74cd9e60e7c609c"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3fb583482eb638530bbe7b96ac32e7e773faabc",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/c3fb583482eb638530bbe7b96ac32e7e773faabc"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/aether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3868e8ae8209fd17322d9798e3db2ea67ceff1ab",
+      "size": 318,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/3868e8ae8209fd17322d9798e3db2ea67ceff1ab"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/ender_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46405fea33865fa69caab2b77527b8036a5ad7a7",
+      "size": 317,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/46405fea33865fa69caab2b77527b8036a5ad7a7"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/fire_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4156e8f99ba9ab3860f6425bf764fb863306f42f",
+      "size": 316,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/4156e8f99ba9ab3860f6425bf764fb863306f42f"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/forest_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c842634e3d35ac56e2ae92cb1a662b2aabb5e4a0",
+      "size": 318,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/c842634e3d35ac56e2ae92cb1a662b2aabb5e4a0"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/ghost_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91ddcb3116839f7531c62d1f2eac6af37f57e570",
+      "size": 317,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/91ddcb3116839f7531c62d1f2eac6af37f57e570"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/ice_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13650a62f93775635f1e0118c5ea226d93170dac",
+      "size": 315,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/13650a62f93775635f1e0118c5ea226d93170dac"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/nether_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16641185240ed5100f38a03568d2c8b5e48d3ff5",
+      "size": 318,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/16641185240ed5100f38a03568d2c8b5e48d3ff5"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/blocks/water_dragon_egg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c01fc7096634cb1e6e50bf8e27a01885e2d7f9",
+      "size": 317,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/26c01fc7096634cb1e6e50bf8e27a01885e2d7f9"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ea15fd0c9a34dfc52cd87f52d612f72471365bf",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/8ea15fd0c9a34dfc52cd87f52d612f72471365bf"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "167d788a3233c0ccb9e0bded706227d6ae0f35e0",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/167d788a3233c0ccb9e0bded706227d6ae0f35e0"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d014f3b41394e744429ff583fe7eec502f5f0daa",
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/trees/d014f3b41394e744429ff583fe7eec502f5f0daa"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/buried_treasure.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeb734aa42d43ccbaef54fab0e83e70e8d27a401",
+      "size": 290,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/eeb734aa42d43ccbaef54fab0e83e70e8d27a401"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/desert_pyramid.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62fc1dfc9725195fe393174ddca75dbedbf1e3d2",
+      "size": 289,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/62fc1dfc9725195fe393174ddca75dbedbf1e3d2"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/end_city_treasure.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53463c6a44badd839fa2a7813039cbb7445ada1d",
+      "size": 289,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/53463c6a44badd839fa2a7813039cbb7445ada1d"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/igloo_chest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dcb47e2eebbe08f99522dfbc0a9dd3a79d2c8c1",
+      "size": 288,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/0dcb47e2eebbe08f99522dfbc0a9dd3a79d2c8c1"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/jungle_temple.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a6102539555f14765558e6e0e222dac10917ccf",
+      "size": 291,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/1a6102539555f14765558e6e0e222dac10917ccf"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/nether_bridge.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b0c737bd797e6dd0699820a0d396c7e676d72a",
+      "size": 290,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/a5b0c737bd797e6dd0699820a0d396c7e676d72a"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/simple_dungeon.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feeba421effa23d2edcfe5df61a6a39afcc33f86",
+      "size": 291,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/feeba421effa23d2edcfe5df61a6a39afcc33f86"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/underwater_ruin_big.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95f03f1019162d87026ef189218f3c565d724cbf",
+      "size": 290,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/95f03f1019162d87026ef189218f3c565d724cbf"
+    },
+    {
+      "path": "src/main/resources/data/dragonmounts/loot_tables/injects/minecraft/chests/woodland_mansion.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f81d3eb448a083a13fcf0a47680359da207df73",
+      "size": 290,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/1f81d3eb448a083a13fcf0a47680359da207df73"
+    },
+    {
+      "path": "src/main/resources/pack.mcmeta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c384b0d312f73631f432e0f6147a68af4b2fb28a",
+      "size": 245,
+      "url": "https://api.github.com/repos/MWall541/Dragon-Mounts-Legacy/git/blobs/c384b0d312f73631f432e0f6147a68af4b2fb28a"
+    }
+  ],
+  "truncated": false
+}

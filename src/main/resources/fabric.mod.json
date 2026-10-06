@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "babyenderdragon",
+	"version": "${version}",
+	"name": "Baby Ender Dragon",
+	"description": "Phase 1 foundation. Persistent mountable foundation entity. No gameplay features yet.",
+	"authors": [
+		"Pratham"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.babyenderdragon.BabyEnderDragon"
+		],
+		"client": [
+			"com.babyenderdragon.client.BabyEnderDragonClient"
+		]
+	},
+	"mixins": [
+		"babyenderdragon.mixins.json",
+		{
+			"config": "babyenderdragon.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
