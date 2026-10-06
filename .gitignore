@@ -1,3 +1,17 @@
 .gradle/
 build/
 run/
+# decompilation scratch / reference artifacts (not published)
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.pom
+dm/
+dm2/
+mc/
+obx/
+cls.txt
+d.html
+d2.html
+dep26.html
+v262.json
+
