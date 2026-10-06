@@ -1,6 +1,7 @@
 package com.babyenderdragon;
 
 import net.minecraft.world.phys.Vec3;
+import org.joml.Matrix4f;
 import org.joml.Quaternionf;
 
 /**
@@ -11,7 +12,7 @@ import org.joml.Quaternionf;
  *   <li>The dragon's model is rendered with an extra 180 degrees baked into its yaw
  *       (mirrored model + {@code scale(-s, -s, s)} + the renderer's {@code Ry(180 - yaw)}),
  *       so the MODEL frame is rotated 180 degrees about Y relative to the entity frame.
- *       An entity-frame point must be flipped into the model frame first: {@code (x, y, -z)}.</li>
+ *       An entity-frame point must be flipped into the model frame first: {@code (-x, y, -z)}.</li>
  *   <li>That flip CONJUGATES the other two axes:
  *       {@code Ry(180) . Rx(t) == Rx(-t) . Ry(180)} and
  *       {@code Ry(180) . Rz(t) == Rz(-t) . Ry(180)}.
@@ -21,8 +22,9 @@ import org.joml.Quaternionf;
  * </ul>
  *
  * <p>Every consumer (the server seat, the dragon renderer) composes the SAME transform:
- * <pre>world = dragonPos + Ry(180 - yaw) . Rx(-pitch) . Rz(-roll) . (x, y, -z)</pre>
- * where {@code (x, y, -z)} is the entity-frame point flipped into the model frame.
+ * <pre>world = dragonPos + Ry(180 - yaw) . Rx(-pitch) . Rz(-roll) . (-x, y, -z)</pre>
+ * where {@code (-x, y, -z)} is the entity-frame point flipped into the model frame
+ * (a 180-degree Y rotation).
  *
  * <p>Verified numerically: with pitch = roll = 0 this reproduces vanilla exactly at every yaw
  * (0/45/90/137/-90/180/-33); across attitude combinations the seat holds a constant height
@@ -58,8 +60,11 @@ public final class DragonFrame {
 	 */
 	public static Vec3 modelToWorld(Vec3 dragonPos, float yawDeg, float pitchDeg, float rollDeg,
 			Vec3 entityFramePoint) {
-		// entity frame -> model frame. This z flip is what makes it agree with vanilla at rest.
-		double x = entityFramePoint.x;
+		// entity frame -> model frame: the frame flip is a 180-degree Y rotation, so BOTH x and z
+		// flip. (The old (x, y, -z) form was a mirror - invisible only because every seat so far
+		// sits at x = 0. With (-x, y, -z) this equals vanilla's yaw-only rotation at every yaw,
+		// x != 0 included; checked by test T3.)
+		double x = -entityFramePoint.x;
 		double y = entityFramePoint.y;
 		double z = -entityFramePoint.z;
 
@@ -103,5 +108,29 @@ public final class DragonFrame {
 	/** {@code Rz(-roll)} - the roll alone, for pivoted composition around {@link #ROLL_PIVOT_Y}. */
 	public static Quaternionf rollRotation(float rollDeg) {
 		return new Quaternionf().rotateZ((float) Math.toRadians(-rollDeg));
+	}
+
+	/**
+	 * The rider's attitude, pivoting about its ATTACHMENT point ({@code attachY} above the model
+	 * origin) instead of its feet:
+	 *
+	 * <pre>T(0, attachY, 0) . Rx(-pitch) . Rz(-roll) . T(0, -attachY, 0)</pre>
+	 *
+	 * <p>SAME SIGNS as the dragon's own render ({@link #yawPitch} / {@link #rollRotation}):
+	 * the player renderer applies the identical frame - {@code setupRotations} (which ends with
+	 * {@code Ry(180 - bodyRot)}) first, then {@code scale(-1, -1, 1)}, then
+	 * {@code translate(0, -1.501, 0)} - so both are in the same flipped frame and rotate the
+	 * same way. (Verified against the decompiled 26.2 {@code LivingEntityRenderer.submit} and
+	 * {@code AvatarRenderer.setupRotations}.)
+	 *
+	 * <p>Without the pivot wrap the rider would rotate about its feet, which sit {@code attachY}
+	 * BELOW the seat - swinging the seat contact point 0.6 * sin(angle) off the dragon's back.
+	 */
+	public static Matrix4f riderAttitude(float pitchDeg, float rollDeg, float attachY) {
+		return new Matrix4f()
+				.translate(0.0F, attachY, 0.0F)
+				.rotateX((float) Math.toRadians(-pitchDeg))
+				.rotateZ((float) Math.toRadians(-rollDeg))
+				.translate(0.0F, -attachY, 0.0F);
 	}
 }

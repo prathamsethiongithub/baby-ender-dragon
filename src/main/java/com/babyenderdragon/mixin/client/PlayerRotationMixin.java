@@ -1,9 +1,9 @@
 package com.babyenderdragon.mixin.client;
 
+import com.babyenderdragon.DragonFrame;
 import com.babyenderdragon.client.RiderPoseConfig;
 import com.babyenderdragon.client.RidingDragonRenderState;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import org.spongepowered.asm.mixin.Mixin;
@@ -40,20 +40,13 @@ public abstract class PlayerRotationMixin {
 			return;
 		}
 
-		// Full strength (1.0). The couplings were a fudge for the seat swinging off the roll
-		// axis; with the weld + the spine pivot (DragonFrame.ROLL_PIVOT_Y) they are gone.
-		float roll = rs.babyenderdragon$getDragonRoll() * RiderPoseConfig.PLAYER_ROLL_SIGN;
-		float pitch = rs.babyenderdragon$getDragonPitch() * RiderPoseConfig.PLAYER_PITCH_SIGN;
-
-		// Pitch first, then roll, matching the order the dragon's own render composes them.
-		// Without the pitch the rider stays bolt upright through a steep dive while the dragon
-		// noses down, so he reads as floating off it even though the seat position is correct.
-		if (pitch != 0.0F) {
-			pose.mulPose(Axis.XP.rotationDegrees(pitch));
-		}
-		if (roll == 0.0F) {
-			return;
-		}
-		pose.mulPose(Axis.ZP.rotationDegrees(roll));
+		// One attitude, SAME signs as the dragon's own render (Step-1 source check: the player
+		// renderer applies the identical frame - setupRotations with Ry(180 - bodyRot), then
+		// scale(-1, -1, 1), then translate(0, -1.501, 0) - so both rotate the same way), and
+		// pivoting about the rider's ATTACHMENT point so the seat contact stays on the back.
+		pose.mulPose(DragonFrame.riderAttitude(
+				rs.babyenderdragon$getDragonPitch(),
+				rs.babyenderdragon$getDragonRoll(),
+				rs.babyenderdragon$getAttachY()));
 	}
 }

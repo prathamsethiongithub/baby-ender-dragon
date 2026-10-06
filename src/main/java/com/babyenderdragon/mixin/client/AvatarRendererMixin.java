@@ -45,12 +45,14 @@ public class AvatarRendererMixin {
 			// them; passengerOffset is minecart-only, so the avatar's render offset is ZERO).
 			Vec3 seatWorld = dragon.getSeatWorld(entity, partialTick);
 			Vec3 attach = entity.getVehicleAttachmentPoint(dragon);
+			rs.babyenderdragon$setAttachY((float) attach.y);
 			state.x = seatWorld.x - attach.x;
 			state.y = seatWorld.y - attach.y;
 			state.z = seatWorld.z - attach.z;
 		} else {
 			rs.babyenderdragon$setDragonRoll(0.0F);
 			rs.babyenderdragon$setDragonPitch(0.0F);
+			rs.babyenderdragon$setAttachY(0.0F);
 		}
 	}
 }

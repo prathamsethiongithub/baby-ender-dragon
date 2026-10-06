@@ -19,4 +19,8 @@ public interface RidingDragonRenderState {
 	void babyenderdragon$setDragonPitch(float pitch);
 
 	float babyenderdragon$getDragonPitch();
+
+	void babyenderdragon$setAttachY(float attachY);
+
+	float babyenderdragon$getAttachY();
 }

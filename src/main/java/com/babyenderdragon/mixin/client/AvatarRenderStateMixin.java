@@ -16,6 +16,9 @@ public class AvatarRenderStateMixin implements RidingDragonRenderState {
 	@Unique
 	private float babyenderdragon$dragonPitch;
 
+	@Unique
+	private float babyenderdragon$attachY;
+
 	@Override
 	public void babyenderdragon$setRidingDragon(boolean riding) {
 		this.babyenderdragon$ridingDragon = riding;
@@ -44,5 +47,15 @@ public class AvatarRenderStateMixin implements RidingDragonRenderState {
 	@Override
 	public float babyenderdragon$getDragonPitch() {
 		return this.babyenderdragon$dragonPitch;
+	}
+
+	@Override
+	public void babyenderdragon$setAttachY(float attachY) {
+		this.babyenderdragon$attachY = attachY;
+	}
+
+	@Override
+	public float babyenderdragon$getAttachY() {
+		return this.babyenderdragon$attachY;
 	}
 }
