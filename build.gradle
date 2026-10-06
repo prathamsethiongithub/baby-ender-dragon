@@ -45,3 +45,18 @@ jar {
 		rename { "${it}_${project.base.archivesName.get()}" }
 	}
 }
+
+loom {
+	fabricApi {
+		// Creates the `gametest` source set and registers run config `clientGameTest`
+		// -> Gradle task `runClientGameTest`.
+		configureTests {
+			createSourceSet = true
+			enableGameTests = true
+			enableClientGameTests = true
+			// Without this the embedded dedicated server refuses to boot
+			// ("You need to agree to the EULA") and createServer() times out.
+			eula = true
+		}
+	}
+}

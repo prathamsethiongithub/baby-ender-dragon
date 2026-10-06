@@ -1,6 +1,7 @@
 package com.babyenderdragon.mixin.client;
 
 import com.babyenderdragon.FoundationEntity;
+import com.babyenderdragon.SeatSelfCheck;
 import com.babyenderdragon.client.RidingDragonRenderState;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
@@ -49,6 +50,15 @@ public class AvatarRendererMixin {
 			state.x = seatWorld.x - attach.x;
 			state.y = seatWorld.y - attach.y;
 			state.z = seatWorld.z - attach.z;
+			if (SeatSelfCheck.ENABLED) {
+				// Self-check stash: H2 (PlayerRotationMixin) reads these through the state.
+				rs.babyenderdragon$setDebugDragonId(dragon.getId());
+				rs.babyenderdragon$setDebugSeat(seatWorld.x, seatWorld.y, seatWorld.z);
+				Vec3 playerPos = entity.getPosition(partialTick);
+				rs.babyenderdragon$setDebugPlayer(playerPos.x, playerPos.y, playerPos.z);
+				rs.babyenderdragon$setDebugPartialTick(partialTick);
+				rs.babyenderdragon$setDebugDragonYaw(dragon.getYRot(partialTick));
+			}
 		} else {
 			rs.babyenderdragon$setDragonRoll(0.0F);
 			rs.babyenderdragon$setDragonPitch(0.0F);

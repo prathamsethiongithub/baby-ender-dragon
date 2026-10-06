@@ -1,0 +1,32 @@
+SEAT SELF-CHECK RESULTS
+run mode: normal
+
+scenario         samples   maxHipErr  maxRotErr maxCamDelta  riderFwdY dragonFwdY  verdict
+s1_straight           27     0.00000     0.0000     0.00000     0.0000     0.0000  PASS
+s2_bank_right         15     0.00000     0.0000     0.00000     0.0000     0.0000  PASS
+s3_bank_left          15     0.00000     0.0000     0.00000     0.0000     0.0000  PASS
+s4_dive               15     0.00000     0.0000     0.00000    -0.8660    -0.8660  PASS
+s5_climb              15     0.00000     0.0000     0.00000     0.8660     0.8660  PASS
+s6_combined           15     0.00000     0.0000     0.00000    -0.6428    -0.6428  PASS
+s7_bank_sweep         60     0.00000     0.0000     0.00000     0.0000     0.0000  PASS
+s8_yaw_wrap           60     0.00000     0.0000     0.06130     0.0000     0.0000  PASS
+
+first-sample diagnostics (rider vs dragon):
+  s1_straight     rider[yaw=-0.0 pitch=180.0 roll=0.0] bodyYaw=0.0 | dragon[yaw=-0.0 pitch=180.0 roll=0.0] yaw=0.0
+  s2_bank_right   rider[yaw=-0.0 pitch=180.0 roll=-35.0] bodyYaw=0.0 | dragon[yaw=-0.0 pitch=180.0 roll=-35.0] yaw=0.0
+  s3_bank_left    rider[yaw=-0.0 pitch=180.0 roll=35.0] bodyYaw=0.0 | dragon[yaw=-0.0 pitch=180.0 roll=35.0] yaw=0.0
+  s4_dive         rider[yaw=-60.0 pitch=180.0 roll=0.0] bodyYaw=0.0 | dragon[yaw=-60.0 pitch=180.0 roll=0.0] yaw=0.0
+  s5_climb        rider[yaw=60.0 pitch=180.0 roll=0.0] bodyYaw=0.0 | dragon[yaw=60.0 pitch=180.0 roll=0.0] yaw=0.0
+  s6_combined     rider[yaw=-40.0 pitch=43.0 roll=-35.0] bodyYaw=137.0 | dragon[yaw=-40.0 pitch=43.0 roll=-35.0] yaw=137.0
+  s7_bank_sweep   rider[yaw=-0.0 pitch=180.0 roll=-1.7] bodyYaw=0.0 | dragon[yaw=-0.0 pitch=180.0 roll=-1.8] yaw=0.0
+  s8_yaw_wrap     rider[yaw=0.0 pitch=9.0 roll=-25.0] bodyYaw=171.0 | dragon[yaw=0.0 pitch=9.0 roll=-25.0] yaw=171.0
+
+screenshots:
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0000_seat_s1_straight.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0001_seat_s2_bank_right.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0002_seat_s3_bank_left.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0003_seat_s4_dive.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0004_seat_s5_climb.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0005_seat_s6_combined.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0006_seat_s7_bank_sweep.png
+  C:\Users\fortn\Desktop\check this ai agents this desktop folder is for you outside of this are my games\research\baby-ender-dragon-phase1\research\baby-ender-dragon-phase1\project\build\run\clientGameTest\screenshots\0007_seat_s8_yaw_wrap.png

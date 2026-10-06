@@ -1,0 +1,17 @@
+{
+	"schemaVersion": 1,
+	"id": "babyenderdragon_selfcheck",
+	"version": "1.0.0",
+	"name": "Baby Ender Dragon Seat Self-Check",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"com.babyenderdragon.selfcheck.RiderSeatAttitudeClientTest"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"fabric-api": "*"
+	}
+}

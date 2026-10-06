@@ -258,6 +258,38 @@ public final class FoundationEntity extends LivingEntity {
 				getXRot(partialTick), roll, seat);
 	}
 
+	// ---- self-check support (debug-only; inert unless -Dbabyenderdragon.selfcheck=true) -----
+
+	/** Set by debugSetAttitude; freezes the flight controller so it cannot overwrite the attitude. */
+	private boolean debugFrozen;
+
+	/**
+	 * Pins yaw/pitch/bank (and their previous-tick values, so interpolation is flat) for the seat
+	 * self-check. No-op unless -Dbabyenderdragon.selfcheck=true.
+	 */
+	public void debugSetAttitude(float yaw, float pitch, float bank) {
+		if (!SeatSelfCheck.ENABLED) {
+			return;
+		}
+		this.debugFrozen = true;
+		setYRot(yaw);
+		this.yRotO = yaw;
+		setYBodyRot(yaw);
+		this.yBodyRotO = yaw;
+		setXRot(pitch);
+		this.xRotO = pitch;
+		this.oBank = bank;
+		this.bank = bank;
+	}
+
+	/** Clears the self-check freeze. No-op unless the selfcheck property is on. */
+	public void debugClearFreeze() {
+		if (!SeatSelfCheck.ENABLED) {
+			return;
+		}
+		this.debugFrozen = false;
+	}
+
 	@Override
 	public HumanoidArm getMainArm() {
 		return HumanoidArm.RIGHT;
@@ -332,6 +364,14 @@ public final class FoundationEntity extends LivingEntity {
 		flapSpeed *= (float) Math.pow(2.0D, Mth.clamp(getDeltaMovement().y, -4.0D, 4.0D));
 		this.oFlapTime = this.flapTime;
 		this.flapTime += flapSpeed;
+
+		// ---- self-check freeze (debug-only) --------------------------------------------
+		// With an attitude pinned by debugSetAttitude, neither the flight controller nor the
+		// bank easing may overwrite it. The wing clock above still runs (animation is not part
+		// of the check). Inert unless -Dbabyenderdragon.selfcheck=true.
+		if (this.debugFrozen) {
+			return;
+		}
 
 
 		if (rider == null) {

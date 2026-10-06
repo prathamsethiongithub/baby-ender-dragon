@@ -4,6 +4,7 @@ import com.babyenderdragon.BabyEnderDragon;
 import com.babyenderdragon.DragonFrame;
 import com.babyenderdragon.FoundationEntity;
 import com.babyenderdragon.ModEntities;
+import com.babyenderdragon.SeatSelfCheck;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -53,6 +54,8 @@ public final class BabyEnderDragonClient implements ClientModInitializer {
 		public float bodyYaw;
 		public float bodyPitch;
 		public float roll;
+		/** Entity id, for the seat self-check's per-entity keying (H1). */
+		public int entityId;
 	}
 
 	private static final class BabyDragonRenderer
@@ -82,6 +85,7 @@ public final class BabyEnderDragonClient implements ClientModInitializer {
 			state.bodyYaw = entity.getYRot(partialTick);
 			state.bodyPitch = entity.getXRot(partialTick);
 			state.roll = entity.getBank(partialTick);
+			state.entityId = entity.getId();
 		}
 
 		@Override
@@ -97,6 +101,11 @@ public final class BabyEnderDragonClient implements ClientModInitializer {
 			pose.translate(0.0F, (float) DragonFrame.ROLL_PIVOT_Y, 0.0F);
 			pose.mulPose(DragonFrame.rollRotation(state.roll));
 			pose.translate(0.0F, (float) -DragonFrame.ROLL_PIVOT_Y, 0.0F);
+
+			if (SeatSelfCheck.ENABLED) {
+				// H1: record the dragon's applied pose rotation for the seat self-check.
+				SeatSelfCheck.onDragonPose(state.entityId, pose.last().pose());
+			}
 
 			// Copied from vanilla EnderDragonRenderer.submit (bytecode, 26.2):
 			//   scale(-1, -1, 1) then translate(0, -1.501, 0)

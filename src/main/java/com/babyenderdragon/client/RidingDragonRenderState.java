@@ -23,4 +23,34 @@ public interface RidingDragonRenderState {
 	void babyenderdragon$setAttachY(float attachY);
 
 	float babyenderdragon$getAttachY();
+
+	// ---- self-check stash (written only when -Dbabyenderdragon.selfcheck=true) -------------
+
+	void babyenderdragon$setDebugDragonId(int id);
+
+	int babyenderdragon$getDebugDragonId();
+
+	void babyenderdragon$setDebugSeat(double x, double y, double z);
+
+	double babyenderdragon$getDebugSeatX();
+
+	double babyenderdragon$getDebugSeatY();
+
+	double babyenderdragon$getDebugSeatZ();
+
+	void babyenderdragon$setDebugPlayer(double x, double y, double z);
+
+	double babyenderdragon$getDebugPlayerX();
+
+	double babyenderdragon$getDebugPlayerY();
+
+	double babyenderdragon$getDebugPlayerZ();
+
+	void babyenderdragon$setDebugPartialTick(float partialTick);
+
+	float babyenderdragon$getDebugPartialTick();
+
+	void babyenderdragon$setDebugDragonYaw(float yaw);
+
+	float babyenderdragon$getDebugDragonYaw();
 }

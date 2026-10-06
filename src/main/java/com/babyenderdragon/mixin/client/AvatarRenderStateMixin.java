@@ -19,6 +19,33 @@ public class AvatarRenderStateMixin implements RidingDragonRenderState {
 	@Unique
 	private float babyenderdragon$attachY;
 
+	@Unique
+	private int babyenderdragon$debugDragonId;
+
+	@Unique
+	private double babyenderdragon$debugSeatX;
+
+	@Unique
+	private double babyenderdragon$debugSeatY;
+
+	@Unique
+	private double babyenderdragon$debugSeatZ;
+
+	@Unique
+	private double babyenderdragon$debugPlayerX;
+
+	@Unique
+	private double babyenderdragon$debugPlayerY;
+
+	@Unique
+	private double babyenderdragon$debugPlayerZ;
+
+	@Unique
+	private float babyenderdragon$debugPartialTick;
+
+	@Unique
+	private float babyenderdragon$debugDragonYaw;
+
 	@Override
 	public void babyenderdragon$setRidingDragon(boolean riding) {
 		this.babyenderdragon$ridingDragon = riding;
@@ -57,5 +84,79 @@ public class AvatarRenderStateMixin implements RidingDragonRenderState {
 	@Override
 	public float babyenderdragon$getAttachY() {
 		return this.babyenderdragon$attachY;
+	}
+
+	@Override
+	public void babyenderdragon$setDebugDragonId(int id) {
+		this.babyenderdragon$debugDragonId = id;
+	}
+
+	@Override
+	public int babyenderdragon$getDebugDragonId() {
+		return this.babyenderdragon$debugDragonId;
+	}
+
+	@Override
+	public void babyenderdragon$setDebugSeat(double x, double y, double z) {
+		this.babyenderdragon$debugSeatX = x;
+		this.babyenderdragon$debugSeatY = y;
+		this.babyenderdragon$debugSeatZ = z;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugSeatX() {
+		return this.babyenderdragon$debugSeatX;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugSeatY() {
+		return this.babyenderdragon$debugSeatY;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugSeatZ() {
+		return this.babyenderdragon$debugSeatZ;
+	}
+
+	@Override
+	public void babyenderdragon$setDebugPlayer(double x, double y, double z) {
+		this.babyenderdragon$debugPlayerX = x;
+		this.babyenderdragon$debugPlayerY = y;
+		this.babyenderdragon$debugPlayerZ = z;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugPlayerX() {
+		return this.babyenderdragon$debugPlayerX;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugPlayerY() {
+		return this.babyenderdragon$debugPlayerY;
+	}
+
+	@Override
+	public double babyenderdragon$getDebugPlayerZ() {
+		return this.babyenderdragon$debugPlayerZ;
+	}
+
+	@Override
+	public void babyenderdragon$setDebugPartialTick(float partialTick) {
+		this.babyenderdragon$debugPartialTick = partialTick;
+	}
+
+	@Override
+	public float babyenderdragon$getDebugPartialTick() {
+		return this.babyenderdragon$debugPartialTick;
+	}
+
+	@Override
+	public void babyenderdragon$setDebugDragonYaw(float yaw) {
+		this.babyenderdragon$debugDragonYaw = yaw;
+	}
+
+	@Override
+	public float babyenderdragon$getDebugDragonYaw() {
+		return this.babyenderdragon$debugDragonYaw;
 	}
 }
