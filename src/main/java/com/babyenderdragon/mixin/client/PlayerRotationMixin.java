@@ -40,11 +40,10 @@ public abstract class PlayerRotationMixin {
 			return;
 		}
 
-		float roll = rs.babyenderdragon$getDragonRoll() * RiderPoseConfig.PLAYER_ROLL_COUPLING
-				* RiderPoseConfig.PLAYER_ROLL_SIGN;
-		float pitch = rs.babyenderdragon$getDragonPitch()
-				* RiderPoseConfig.PLAYER_PITCH_COUPLING
-				* RiderPoseConfig.PLAYER_PITCH_SIGN;
+		// Full strength (1.0). The couplings were a fudge for the seat swinging off the roll
+		// axis; with the weld + the spine pivot (DragonFrame.ROLL_PIVOT_Y) they are gone.
+		float roll = rs.babyenderdragon$getDragonRoll() * RiderPoseConfig.PLAYER_ROLL_SIGN;
+		float pitch = rs.babyenderdragon$getDragonPitch() * RiderPoseConfig.PLAYER_PITCH_SIGN;
 
 		// Pitch first, then roll, matching the order the dragon's own render composes them.
 		// Without the pitch the rider stays bolt upright through a steep dive while the dragon

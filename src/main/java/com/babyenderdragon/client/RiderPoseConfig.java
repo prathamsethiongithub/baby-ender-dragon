@@ -28,25 +28,11 @@ public final class RiderPoseConfig {
 	public static final float LEG_YAW_DEG = 6.0F;
 
 	/**
-	 * How much of the dragon's bank the rider takes on. 1.0 = rigidly locked to the dragon;
-	 * lower lets the rider read as an independent body holding on.
-	 */
-	public static final float PLAYER_ROLL_COUPLING = 0.85F;
-	/**
 	 * Sign of the rider's bank. The dragon rolls inside a yaw frame with an extra 180 deg flip
 	 * (Ry(180).Rz(t) == Rz(-t).Ry(180)); the rider's frame has no flip, so matching visually needs
 	 * the opposite sign. Flip this if the rider ever leans AGAINST the turn.
 	 */
 	public static final float PLAYER_ROLL_SIGN = 1.0F;
-
-	/**
-	 * How much of the dragon's PITCH the rider takes on.
-	 *
-	 * <p>Without this the rider stays upright through a dive while the dragon noses down, so he
-	 * reads as floating off it even when the seat position is mathematically correct. Same coupling
-	 * reasoning as the roll.
-	 */
-	public static final float PLAYER_PITCH_COUPLING = 0.85F;
 
 	/**
 	 * Sign of the rider's pitch. Kept as a knob for parity with PLAYER_ROLL_SIGN: the dragon's

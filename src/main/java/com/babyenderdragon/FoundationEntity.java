@@ -220,63 +220,42 @@ public final class FoundationEntity extends LivingEntity {
 	/** Sign for the seat's roll. Flip if the rider swings the wrong way through a bank. */
 	private static final double SEAT_ROLL_SIGN = 1.0D;
 	/**
-	 * How much of the dragon's roll the SEAT takes on.
+	 * How much of the dragon's roll the SEAT takes on. 1.0 = rigidly locked to the rolled back.
 	 *
-	 * <p>At 1.0 the rider is geometrically perfect: glued to the rolled back, which swings them
-	 * 1.15 * sin(35) = 0.66 blocks sideways at full bank. Correct, but it reads as sliding off the
-	 * side rather than riding. Damping keeps them visually on the spine through a bank while the
-	 * PITCH still follows at full strength - and pitch following is what fixed the dive.
+	 * <p>History: at 1.0 with the roll pivoting at the model ORIGIN, the seat swung
+	 * 1.15 * sin(35) = 0.66 blocks sideways at full bank and read as sliding off - so it was
+	 * damped to 0.35 as a fudge. With the roll now pivoting about the spine line through
+	 * {@link DragonFrame#ROLL_PIVOT_Y} (the seat height), the seat sits ON the roll axis and
+	 * full coupling no longer slides it: set to 1.0.
 	 */
-	private static final double SEAT_ROLL_COUPLING = 0.35D;
+	private static final double SEAT_ROLL_COUPLING = 1.0D;
 
 	/**
 	 * Pins the rider to the dragon's BACK through dives, climbs and banks.
 	 *
-	 * <p>Vanilla rotates the seat by YAW ALONE - getDefaultPassengerAttachmentPoint reads yRot and
-	 * nothing else. That is invisible on a boat or horse, whose pitch and roll stay near zero, but
-	 * this dragon pitches up to 60 degrees and rolls 35: the body rotates away from a rider whose
-	 * seat never follows. It is why the rider kept reading as floating or sunk no matter what seat
-	 * height we picked - we were tuning a number against a body that moves away from it.
-	 *
-	 * <p>A previous attempt hand-rolled this in the ENTITY frame and threw the rider clean off the
-	 * dragon. The reason: the model is rendered with an extra 180 deg in its yaw, so the MODEL frame
-	 * is rotated 180 deg about Y relative to the entity frame. The offset must be expressed in the
-	 * model frame first (z negated), then put through the model's own transform:
-	 *
-	 * <pre>world = Ry(180 - yaw) . Rx(-pitch) . Rz(-roll) . (x, y, -z)</pre>
-	 *
-	 * <p>Checked numerically: with pitch = roll = 0 this reproduces vanilla EXACTLY at every yaw
-	 * (0/45/90/137/-90/180/-33), and across 36 attitude combinations the rider holds a constant
-	 * 1.15 blocks above its body station, worst deviation 2e-16.
+	 * <p>Vanilla rotates the seat by YAW ALONE; this dragon pitches up to 60 degrees and rolls 35,
+	 * so the seat must follow the body's attitude or the rider reads as floating/sunk no matter
+	 * what seat height is picked. The transform (and the two 180-degree flips that shape it) now
+	 * lives in ONE place: {@link DragonFrame#modelToWorld}.
 	 */
 	@Override
 	public Vec3 getPassengerRidingPosition(Entity passenger) {
 		Vec3 seat = getPassengerAttachmentPoint(passenger, getDimensions(getPose()), 1.0F);
+		return DragonFrame.modelToWorld(position(), getYRot(), getXRot(),
+				(float) (this.bank * SEAT_ROLL_SIGN * SEAT_ROLL_COUPLING), seat);
+	}
 
-		// entity frame -> model frame. This z flip is what makes it agree with vanilla at rest.
-		double x = seat.x;
-		double y = seat.y;
-		double z = -seat.z;
-
-		// Rz(-roll)
-		double rz = Math.toRadians(-this.bank * SEAT_ROLL_SIGN * SEAT_ROLL_COUPLING);
-		double cz = Math.cos(rz), sz = Math.sin(rz);
-		double x1 = x * cz - y * sz;
-		double y1 = x * sz + y * cz;
-
-		// Rx(-pitch). Minecraft pitch: positive = nose DOWN.
-		double rx = Math.toRadians(-getXRot());
-		double cx = Math.cos(rx), sx = Math.sin(rx);
-		double y2 = y1 * cx - z * sx;
-		double z2 = y1 * sx + z * cx;
-
-		// Ry(180 - yaw), the model's own yaw term.
-		double ry = Math.toRadians(180.0D - getYRot());
-		double cy = Math.cos(ry), sy = Math.sin(ry);
-		double x3 = x1 * cy + z2 * sy;
-		double z3 = -x1 * sy + z2 * cy;
-
-		return position().add(x3, y2, z3);
+	/**
+	 * The seat in world space, interpolated at partialTick - the same transform as
+	 * {@link #getPassengerRidingPosition}, sampled with the dragon's RENDER-time values so the
+	 * rider's drawing (the client weld in AvatarRendererMixin) matches the dragon's interpolated
+	 * pose. Per-passenger: the attachment point resolves seat 0 / seat 1 automatically.
+	 */
+	public Vec3 getSeatWorld(Entity passenger, float partialTick) {
+		Vec3 seat = getPassengerAttachmentPoint(passenger, getDimensions(getPose()), 1.0F);
+		float roll = (float) (getBank(partialTick) * SEAT_ROLL_SIGN * SEAT_ROLL_COUPLING);
+		return DragonFrame.modelToWorld(getPosition(partialTick), getYRot(partialTick),
+				getXRot(partialTick), roll, seat);
 	}
 
 	@Override

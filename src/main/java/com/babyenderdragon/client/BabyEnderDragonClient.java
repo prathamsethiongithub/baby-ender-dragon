@@ -1,10 +1,10 @@
 package com.babyenderdragon.client;
 
 import com.babyenderdragon.BabyEnderDragon;
+import com.babyenderdragon.DragonFrame;
 import com.babyenderdragon.FoundationEntity;
 import com.babyenderdragon.ModEntities;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.model.geom.ModelLayers;
@@ -89,24 +89,14 @@ public final class BabyEnderDragonClient implements ClientModInitializer {
 				SubmitNodeCollector collector, CameraRenderState camera) {
 			pose.pushPose();
 
-			// Face the direction of travel. Standard entity convention; the dragon previously
-			// rendered with NO rotation at all, which is why its body never appeared to turn.
-			pose.mulPose(Axis.YP.rotationDegrees(180.0F - state.bodyYaw));
-			// Bank into climbs and dives with the dragon's own pitch.
-			// PITCH AND ROLL ARE NEGATED, and that is not arbitrary.
-			//
-			// We render with an extra 180 deg baked into the yaw above (vanilla uses a plain -yaw).
-			// A 180 deg Y rotation CONJUGATES the other two axes:
-			//     Ry(180) . Rx(t) == Rx(-t) . Ry(180)
-			//     Ry(180) . Rz(t) == Rz(-t) . Ry(180)
-			// so that extra flip silently inverted both. Uncorrected, the dragon nosed UP while
-			// diving and banked OUTWARD through turns. Checked numerically at yaw 0/90/-140: nose y
-			// was +0.866 at 60 deg of pitch, and must be negative for a dive.
-			pose.mulPose(Axis.XP.rotationDegrees(-state.bodyPitch));
-			// Bank into turns. Applied after yaw+pitch so it rolls about the dragon's own body axis.
-			// Negated for the same Ry(180) conjugation reason as the pitch above, so the roll
-			// leans INTO the corner instead of away from it.
-			pose.mulPose(Axis.ZP.rotationDegrees(-state.roll));
+			// Yaw + pitch from the model frame's single source of truth (DragonFrame; it also
+			// carries the explanation of the two 180-degree flips).
+			pose.mulPose(DragonFrame.yawPitch(state.bodyYaw, state.bodyPitch));
+			// Roll about the spine line through ROLL_PIVOT_Y (one constant, the same pivot the
+			// seat math uses) so the dragon's back stays under the rider through a bank.
+			pose.translate(0.0F, (float) DragonFrame.ROLL_PIVOT_Y, 0.0F);
+			pose.mulPose(DragonFrame.rollRotation(state.roll));
+			pose.translate(0.0F, (float) -DragonFrame.ROLL_PIVOT_Y, 0.0F);
 
 			// Copied from vanilla EnderDragonRenderer.submit (bytecode, 26.2):
 			//   scale(-1, -1, 1) then translate(0, -1.501, 0)
